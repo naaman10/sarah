@@ -6,81 +6,32 @@ publish_mode: editorial_workflow
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 collections:
-  - name: "digital" # Used in routes, e.g., /admin/collections/blog
-    label: "Digital" # Used in the UI
-    folder: "_posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Title", name: "title", widget: "string", required: true}
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Client", name: "client", widget: "string", required: true }
-      - { label: "Intro", name: "intro", widget: "string", required: true}
-      - { label: "Category", name: "category", widget: "select", options: ["digital", "personal"], default: "digital", required: true }
-      - { label: "Main Image", name: "main-image", widget: "string", required: true }
-      - label: 'Content'
-        name: 'sections'
-        widget: 'list'
-        types:
-          - label: 'Text'
-            name: 'text'
-            widget: 'object'
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "Home"
+        file: "index.markdown"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "home" }
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Team
+            name: team
+            widget: list
             fields:
-            - { label: Text, name: text, widget: markdown}
-            - { label: Background, name: background, widget: select, options: [Dark, Light]}
-          - label: 'Image Left'
-            name: 'image-left'
-            widget: 'object'
-            fields: 
-              - label: 'Image' 
-                name: 'image'
-                widget: 'object'
-                fields: 
-                - { label: Image, name: image, widget: string}
-                - { label: Alt Text, name: alt, widget: string}
-                - { label: Caption, name: caption, widget: string}
-                - { label: Size, name: size, widget: select, options: ["full", "mobile", "600", "300"]}
-              - { label: Text, name: text, widget: markdown }
-              - { label: Background, name: background, widget: select, options: [Dark, Light]}
-          - label: 'Brands'
-            name: 'brands'
-            widget: 'list'
+              - {label: Name, name: name, widget: string}
+              - {label: Position, name: position, widget: string}
+              - {label: Photo, name: photo, widget: image}
+      - label: "Locations Page"
+        name: "locations"
+        file: "site/content/locations.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Locations
+            name: locations
+            widget: list
             fields:
-            - { label: Image URL, name: image, widget: string}
-            - { label: Alt Text, name: alt, widget: string}
-          - label: 'Image Right'
-            name: 'image-right'
-            widget: 'object'
-            fields: 
-              - label: 'Image' 
-                name: 'image'
-                widget: 'object'
-                fields: 
-                - { label: Image, name: image, widget: string}
-                - { label: Alt Text, name: alt, widget: string}
-                - { label: Caption, name: caption, widget: string}
-                - { label: Size, name: size, widget: select, options: ["full", "mobile", "600", "300"]}
-              - { label: Text, name: text, widget: markdown }
-              - { label: Background, name: background, widget: select, options: [Dark, Light]}
-          - label: 'Image Carousel'
-            name: 'image-carousel'
-            widget: 'object'
-            fields:
-            - label: 'Title'
-              name: 'title'
-              widget: 'string'
-            - label: 'Background'
-              name: 'Background'
-              widget: 'select'
-              options: ['Light', 'Dark']
-            - label: 'Show Captions'
-              name: 'captions'
-              widget: 'boolean'
-              default: false
-            - label: 'Images'
-              name: 'images'
-              widget: 'list'
-              fields:
-              - { label: Image URL, name: image, widget: string }
-              - { label: Alt Text, name: alt, widget: string }
+              - {label: Name, name: name, widget: string}
+              - {label: Address, name: address, widget: string}
