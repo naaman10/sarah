@@ -15,6 +15,7 @@ collections:
         fields:
           - { label: "Layout", name: "layout", widget: "hidden", default: "home" }
           - {label: Title, name: title, widget: string}
+          - {label: SEO Description, name: description, widget: string, required: true, pattern: ['.{160,}', "Must have at least 160 characters"]}
           - {label: Intro, name: intro, widget: markdown, required: false}
           - label: Team
             name: team
