@@ -1,10 +1,10 @@
 <section>
     <div class="row">
         <div class="col">
-            <img src="{{ site.cloudinary_url }}{{ page.hero_banner.image }}" class="img-fluid" {% if page.hero_banner.alt %}alt="{{ page.hero_banner.alt }}"{% endif %} />
+            <img src="{{ site.cloudinary_url }}{{ page.hero_banner.image }}" class="img-fluid" {% if page.hero_banner.alt %}alt="YES"{% endif %} />
         </div>
         <div class="col">
-            <h1>{{ page.hero_banner.title }}</h1>
+            <h1>{{ hero_banner.title }}</h1>
             <h2>{{ page.hero_banner.position }}</h2>
         </div>
     </div>
