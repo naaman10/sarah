@@ -14,28 +14,28 @@ collections:
         file: "index.markdown"
         fields:
           - { label: "Layout", name: "layout", widget: "hidden", default: "home" }
-          - {label: Title, name: title, widget: string}
-          - {label: SEO Description, name: description, widget: string, required: true, pattern: ['.{160,}', "Must have at least 160 characters"]}
-          - label: Hero Banner
-            name: hero-banner
-            widget: list
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "SEO Description", name: "description", widget: "string", required: true, pattern: ['.{160,}', "Must have at least 160 characters"]}
+          - label: "Hero Banner"
+            name: "hero-banner"
+            widget: "list"
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Location, name: location, widget: string}
-              - {label: Image, name: image, widget: string}
-  - name: 'config'
-    label: 'Config'
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Position", name: "position", widget: "string"}
+              - {label: "Location", name: "location", widget: "string"}
+              - {label: "Image", name: "image", widget: "string"}
+  - name: "config"
+    label: "Config"
     editor:
       preview: false
     files:
-      - label: 'Navigation'
-        name: 'navigation'
-        file: '_data/navigation.yml'
+      - label: "Navigation"
+        name: "navigation"
+        file: "_data/navigation.yml"
         fields:
-          - label: 'Navigation Items'
-            name: 'items'
-            widget: 'list'
+          - label: "Navigation Items"
+            name: "items"
+            widget: "list"
             fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Link, name: link, widget: string }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
