@@ -2,7 +2,7 @@
 layout: home
 title: Home
 description: dosbtchzgzfmawkovjlwjgmjljgjzcnfhyhwytqjklufohacczgxxutiumvfymhhxmwuavnixndzufiwjcgemtefvyyvjbnpwubxlznshtukitidkfzrqrfklmpvdoymiygfpnpsncjjqbozmryugkbzuszfxumd
-hero-banner:
+hero_banner:
   - title: Sarah Hudson
     position: Trainee Therapist
     location: Manchester, UK
