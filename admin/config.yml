@@ -18,13 +18,21 @@ collections:
           - { label: "SEO Description", name: "description", widget: "string", required: true, pattern: ['.{160,}', "Must have at least 160 characters"] }
           - label: "Hero Banner"
             name: "hero_banner"
-            widget: "list"
+            widget: "object"
+            summary: "{{ fields.title }}"
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Position", name: "position", widget: "string" }
               - { label: "Location", name: "location", widget: "string" }
               - { label: "Image", name: "image", widget: "string" }
               - { label: "Image Alt", name: "alt", widget: "string "}
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            summary: "{{ fields.title }}"
+            fields:
+             - { label: "Title", name: "title", widget: "string" }
+             - { label: "Text", name: "text", widget: "markdown" }
   - name: "config"
     label: "Config"
     editor:
