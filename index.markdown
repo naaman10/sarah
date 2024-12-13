@@ -30,9 +30,12 @@ contact:
   title: Contact Sarah
   intro: Id integer efficitur ridiculus viverra ullamcorper mauris facilisis
     gravida. Vitae mus morbi feugiat natoque bibendum hac nulla.
+  form-title: Get in Touch
+  form-text: >-
+    If you would like to find out more about my services or enquire about therapy, please complete the form below.
   contact:
     - type: Email
-      Value: sarah@sarahhudsoncounselling.com
+      value: sarah@sarahhudsoncounselling.com
     - type: BACP
-      Value: https://www.bacp.co.uk/therapists/111111/sarah-hudson/manchester-m2
+      value: https://www.bacp.co.uk/therapists/111111/sarah-hudson/manchester-m2
 ---
