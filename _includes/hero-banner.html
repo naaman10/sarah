@@ -2,18 +2,18 @@
     <div class="row vh-50">
         <div class="col-sm-12 col-md-6 vh-50 ps-3 block-1 d-flex align-items-center">
             <div>
-                <h1>{{ page.hero_banner[0].title }}</h1>
-                <h4><span>{{ page.hero_banner[0].position }}</span> | <span>{{ page.hero_banner[0].location }}</span></h4>
+                <h1>{{ page.hero_banner.title }}</h1>
+                <h4><span>{{ page.hero_banner.position }}</span> | <span>{{ page.hero_banner.location }}</span></h4>
             </div>
         </div>
-        <div class="col-6 col-md-6 text-center vh-100 d-none d-sm-none d-md-block" style="background-image: url({{ site.cloudinary_url }}/t_square{{ page.hero_banner[0].image }}); background-repeat: no-repeat; background-size: cover;"></div>
+        <div class="col-6 col-md-6 text-center vh-100 d-none d-sm-none d-md-block" style="background-image: url({{ site.cloudinary_url }}/t_square{{ page.hero_banner.image }}); background-repeat: no-repeat; background-size: cover;"></div>
     </div>
     <div class="row vh-50">
         <div class="col-6 col-md-6 vh-50">
-            <a href="#" class="d-flex align-items-center h-100 w-100 text-center">
+            <a href="#about" class="d-flex align-items-center h-100 w-100 text-center">
                 <p class="mx-auto">Learn more</p>
             </a>
         </div>
-        <div class="col-6 col-md-6 text-center vh-50 d-sm-block d-md-none" style="background-image: url({{ site.cloudinary_url }}/t_sarah{{ page.hero_banner[0].image }}); background-repeat: no-repeat; background-size: cover; background-position: center center;"></div>
+        <div class="col-6 col-md-6 text-center vh-50 d-sm-block d-md-none" style="background-image: url({{ site.cloudinary_url }}/t_sarah{{ page.hero_banner.image }}); background-repeat: no-repeat; background-size: cover; background-position: center center;"></div>
     </div>
 </section>
