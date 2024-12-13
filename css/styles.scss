@@ -18,6 +18,12 @@ h1, h2, h3, h4, h5, h6, p {
     min-height: 33vh;
     max-height: 33vh;
 }
+#hero-banner {
+    .vh-50 {
+        min-height: 50vh;
+        max-height: 50vh;
+    }
+}
 .banner-image {
     .block-1 {
         background-color: #F6F1ED;

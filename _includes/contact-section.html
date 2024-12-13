@@ -28,18 +28,18 @@
             <div class="m-5">
                 <h3>{{ page.contact.form-title }}</h3>
                 {{ page.contact.form-text | markdownify }}
-                <form name="contact" netlify>
+                <form name="contact" action="/thank-you" netlify>
                     <div class="mb-3">
                         <label for="contactEmail" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="contactEmail">
+                        <input type="email" class="form-control" id="contactEmail" name="Email">
                     </div>
                     <div class="mb-3">
                         <label for="contactName" class="form-label">Name</label>
-                        <input type="email" class="form-control" id="contactName">
+                        <input class="form-control" id="contactName" name="Name">
                     </div>
                     <div class="mb-3">
-                        <label for="contactMessage" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="contactMessage" rows="3"></textarea>
+                        <label for="contactMessage" class="form-label">Your message</label>
+                        <textarea class="form-control" id="contactMessage" rows="3" name="Message"></textarea>
                     </div>
                     <p>
                     <button class="btn btn-primary" type="submit">Send</button>

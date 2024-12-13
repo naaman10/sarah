@@ -76,3 +76,15 @@ collections:
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Link", name: "link", widget: "string" }
+      - label: "Site Data"
+        name: "site_data"
+        file: "_data/sitedata.yml"
+        fields:
+          - label: "Thanks Title"
+            name: "thanks-title"
+            widget: "string"
+          - label: "Thanks Text"
+            name: "thanks-text"
+            widget: "markdown"
+              
+              
