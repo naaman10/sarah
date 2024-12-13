@@ -33,6 +33,28 @@ collections:
             fields:
              - { label: "Title", name: "title", widget: "string" }
              - { label: "Text", name: "text", widget: "markdown" }
+          - label: "Contact Section"
+            name: "contact"
+            widget: "object"
+            summary: "{{ fields.title }}"
+            fields:
+             - label: "Title"
+               name: "title"
+               widget: "string" 
+             - label: "Intro text"
+               name: "intro"
+               widget: "markdown"
+             - label: "Contact Info"
+               name: "contact"
+               widget: "list"
+               fields:
+               - label: "Type"
+                 name: "type"
+                 widget: "select"
+                 options: ["Email", "LinkedIn", "Instagram", "Telephone", "BACP"]
+               - label: "Value"
+                 name: "Value"
+                 widget: "string"  
   - name: "config"
     label: "Config"
     editor:
