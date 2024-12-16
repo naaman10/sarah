@@ -5,5 +5,5 @@ contact-form:
   email-field: Email Address
   name-field: Your name
   message-field: Your message
-  consent-message: By consenting to you agree to the terms and conditions outlined blah blah blah
+  consent-message: By consenting to you agree to the terms and conditions outlined in our <a href="/terms">Terms of Service</a>
   submit-button: Send

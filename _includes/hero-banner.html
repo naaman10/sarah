@@ -10,8 +10,8 @@
     </div>
     <div class="row vh-50">
         <div class="col-6 col-md-6 vh-50">
-            <a href="#about-section" class="d-flex align-items-center h-100 w-100 text-center">
-                <p class="mx-auto">Learn more</p>
+            <a href="{{ page.hero_banner.button-link }}" class="d-flex align-items-center h-100 w-100 text-center">
+                <p class="mx-auto">{{ page.hero_banner.button-text }}</p>
             </a>
         </div>
         <div class="col-6 col-md-6 text-center vh-50 d-sm-block d-md-none" style="background-image: url({{ site.cloudinary_url }}/t_sarah{{ page.hero_banner.image }}); background-repeat: no-repeat; background-size: cover; background-position: center center;"></div>

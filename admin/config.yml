@@ -21,11 +21,13 @@ collections:
             widget: "object"
             summary: "{{ fields.title }}"
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Position", name: "position", widget: "string" }
-              - { label: "Location", name: "location", widget: "string" }
-              - { label: "Image", name: "image", widget: "string" }
-              - { label: "Image Alt", name: "alt", widget: "string"}
+             - { label: "Title", name: "title", widget: "string" }
+             - { label: "Position", name: "position", widget: "string" }
+             - { label: "Location", name: "location", widget: "string" }
+             - { label: "Image", name: "image", widget: "string" }
+             - { label: "Image Alt", name: "alt", widget: "string"}
+             - { label: "Button Text", name: "button-text", widget: "string" }
+             - { label: "Button Link", name: "button-link", widget: "string" }
           - label: "About Section"
             name: "about"
             widget: "object"
@@ -33,6 +35,8 @@ collections:
             fields:
              - { label: "Title", name: "title", widget: "string" }
              - { label: "Text", name: "text", widget: "markdown" }
+             - { label: "Button Text", name: "button-text", widget: "string" }
+             - { label: "Button Link", name: "button-link", widget: "string" }
           - label: "Contact Section"
             name: "contact"
             widget: "object"
@@ -95,5 +99,15 @@ collections:
               - { label: "Message", name: "message-field", widget: "string" }
               - { label: "Consent Text", name: "consent-message", widget: "string" }
               - { label: "Submit Button", name: "submit-button", widget: "string" }
+      - label: "Footer"
+        name: "footer"
+        file: "_data/footer.yml"
+        fields:
+          - label: "Footer Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
               
               
