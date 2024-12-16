@@ -86,5 +86,14 @@ collections:
           - label: "Thanks Text"
             name: "thanks-text"
             widget: "markdown"
+          - label: "Contact Form"
+            name: "contact-form"
+            widget: "object"
+            fields:
+              - { label: "Email Address", name: "email-field", widget: "string" }
+              - { label: "Name", name: "name-field", widget: "string" }
+              - { label: "Message", name: "message-field", widget: "string" }
+              - { label: "Consent Text", name: "consent-message", widget: "string" }
+              - { label: "Submit Button", name: "submit-button", widget: "string" }
               
               
