@@ -9,6 +9,7 @@ hero_banner:
   image: /v1734016650/sarah/IMG_1482.jpg
   button-text: Learn more
   button-link: "#about-section"
+  alt: Picture of Sarah
 about:
   title: About Sarah
   text: >-
@@ -35,8 +36,8 @@ contact:
   intro: Id integer efficitur ridiculus viverra ullamcorper mauris facilisis
     gravida. Vitae mus morbi feugiat natoque bibendum hac nulla.
   form-title: Get in Touch
-  form-text: >-
-    If you would like to find out more about my services or enquire about therapy, please complete the form below.
+  form-text: If you would like to find out more about my services or enquire about
+    therapy, please complete the form below.
   contact:
     - type: Email
       value: sarah@sarahhudsoncounselling.com
