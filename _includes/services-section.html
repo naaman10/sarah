@@ -2,35 +2,115 @@
     <div class="row text-center">
         <div class="col vh-33 d-flex align-items-center justify-content-center">
             <div>
-                <h2 class="">Services</h2>
-                <p>Some text about the services I offer</p>
+                <h2 class="">{{ page.services.title }}</h2>
+                <p>{{ page.services.intro }}</p>
             </div>
         </div>
     </div>
     <div class="row service-row">
-        <div class="col-sm-6 col-md-3 vh-33 d-flex align-items-center justify-content-center">
-            <h3>Service 1</h3>
-        </div>
-        <div class="col-sm-6 col-md-3 vh-33 d-flex align-items-center justify-content-center">
-            <h3>Service 2</h3>
-        </div>
-        <div class="col-sm-6 col-md-3 vh-33 d-flex align-items-center justify-content-center">
-            <h3>Service 3</h3>
-        </div>
-        <div class="col-sm-6 col-md-3 vh-33 d-flex align-items-center justify-content-center">
-            <h3>Service 4</h3>
-        </div>
-        <div class="col-sm-6 col-md-3 vh-33 d-flex align-items-center justify-content-center">
-            <h3>Service 5</h3>
-        </div>
-        <div class="col-sm-6 col-md-3 vh-33 d-flex align-items-center justify-content-center">
-            <h3>Service 6</h3>
-        </div>
-        <div class="col-sm-6 col-md-3 vh-33 d-flex align-items-center justify-content-center">
-            <h3>Service 7</h3>
-        </div>
-        <div class="col-sm-6 col-md-3 vh-33 d-flex align-items-center justify-content-center">
-            <h3>Service 8</h3>
-        </div>
+        {% assign i = page.services.services %}
+        
+        
+        {% case i.size %}
+            {% when 1 %}
+            {% for service in page.services.services %}
+            <div class="col-sm-12 col-md-12 vh-66 d-flex align-items-center justify-content-center">
+                
+            {% endfor %}
+            {% when 2 %}
+            {% for service in page.services.services %}
+            <div class="col-sm-12 col-md-6 vh-66 d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h3>{{ service.service-name }}</h3>
+                    {{ service.service-text | markdownify }}
+                    <a href="{{ services.service-link }}">{{ service.service-link-text }}</a>
+                </div>
+            </div>
+            {% endfor %}
+            {% when 3 %}
+            {% for service in page.services.services %}
+            <div class="col-sm-12 col-md-4 vh-66 d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h3>{{ service.service-name }}</h3>
+                    {{ service.service-text | markdownify }}
+                    <a href="{{ services.service-link }}">{{ service.service-link-text }}</a>
+                </div>
+            </div>
+            {% endfor %}
+            {% when 4 %}
+            {% for service in page.services.services %}
+                <div class="col-sm-12 col-md-4 vh-66 d-flex align-items-center justify-content-center">
+                    <div class="text-center">
+                        <h3>{{ service.service-name }}</h3>
+                        {{ service.service-text | markdownify }}
+                        <a href="{{ services.service-link }}">{{ service.service-link-text }}</a>
+                    </div>
+                </div>
+                {% endfor %}
+            {% when 5 %}
+                {% for service in page.services.services limit:2 %}
+                <div class="col-sm-12 col-md-6 vh-33 d-flex align-items-center justify-content-center">
+                    <div class="text-center">
+                        <h3>{{ service.service-name }}</h3>
+                        {{ service.service-text | markdownify }}
+                        <a href="{{ services.service-link }}">{{ service.service-link-text }}</a>
+                    </div>
+                </div>
+                {% endfor %}
+                {% for service in page.services.services offset:2 %}
+                <div class="col-sm-12 col-md-4 vh-33 d-flex align-items-center justify-content-center">
+                    <div class="text-center">
+                        <h3>{{ service.service-name }}</h3>
+                        {{ service.service-text | markdownify }}
+                        <a href="{{ services.service-link }}">{{ service.service-link-text }}</a>
+                    </div>
+                </div>
+                {% endfor %}
+            {% when 6 %}
+            {% for service in page.services.services %}
+            <div class="col-sm-12 col-md-4 vh-33 d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h3>{{ service.service-name }}</h3>
+                    {{ service.service-text | markdownify }}
+                    <a href="{{ services.service-link }}">{{ service.service-link-text }}</a>
+                </div>
+            </div>
+            {% endfor %}
+            {% when 7 %}
+            {% for service in page.services.services limit:3 %}
+            <div class="col-sm-12 col-md-4 vh-33 d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h3>{{ service.service-name }}</h3>
+                    {{ service.service-text | markdownify }}
+                    <a href="{{ services.service-link }}">{{ service.service-link-text }}</a>
+                </div>
+            </div>
+            {% endfor %}
+            {% for service in page.services.services offset:3 %}
+            <div class="col-sm-12 col-md-3 vh-33 d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h3>{{ service.service-name }}</h3>
+                    {{ service.service-text | markdownify }}
+                    <a href="{{ services.service-link }}">{{ service.service-link-text }}</a>
+                </div>
+            </div>
+            {% endfor %}
+            {% when 8 %}
+            {% for service in page.services.services %}
+            <div class="col-sm-12 col-md-3 vh-33 d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h3>{{ service.service-name }}</h3>
+                    {{ service.service-text | markdownify }}
+                    <a href="{{ services.service-link }}">{{ service.service-link-text }}</a>
+                </div>
+            </div>
+            {% endfor %}
+        {% endcase %}
+            
+
+
+
+
+       
     </div>
 </section>
