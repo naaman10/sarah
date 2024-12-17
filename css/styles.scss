@@ -54,6 +54,11 @@ h1, h2, h3, h4, h5, h6, p {
 #about-section {
     min-height: 100vh!important;
     background-color: #FEE171;
+    .button-group {
+        &:first-child {
+            margin-right: 20px;
+        }
+    }
     p {
         font-size: 20px;
         font-family: $font-sans;
@@ -65,7 +70,6 @@ h1, h2, h3, h4, h5, h6, p {
         font-size: 1.5rem;
         color: #000000;
         text-decoration: none;
-
         border: 2px solid #000000;
         &:hover {
             background-color: #000000;

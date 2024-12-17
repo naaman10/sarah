@@ -4,8 +4,10 @@
             <div>
                 <h2 class="my-5" id="about">{{ page.about.title }}</h2>
                 <div>{{ page.about.text | markdownify }}</div>
-                <div class="my-5">
-                    <a href="{{ page.about.button-link }}" class="button-clear">{{ page.about.button-text }}</a>
+                <div class="my-5 button-group">
+                    {% for button in page.about.buttons %}
+                    <a href="{{ button.button-link }}" class="button-clear">{{ button.button-text }}</a>
+                    {% endfor %}
                 </div>
             </div>
         </div>
