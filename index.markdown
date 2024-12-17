@@ -31,6 +31,9 @@ about:
     Commodo mus sapien placerat nisl mauris praesent suspendisse nullam vulputate. Cursus laoreet sodales habitasse natoque sit turpis cubilia. Metus suscipit quisque justo luctus ex morbi. Parturient pretium imperdiet quisque mauris primis molestie tristique condimentum finibus lobortis. Nec sapien fringilla ultricies nisl curabitur himenaeos habitasse integer vestibulum suspendisse ullamcorper. Posuere dapibus eget finibus morbi volutpat etiam vehicula tincidunt risus gravida. Penatibus fermentum eu proin massa egestas diam scelerisque est. Finibus ante felis morbi neque accumsan vestibulum.
   button-text: Contact Sarah
   button-link: "#contact-section"
+  buttons:
+    - button-text: My Services
+      button-link: "#services-section"
 contact:
   title: Contact Sarah
   intro: Id integer efficitur ridiculus viverra ullamcorper mauris facilisis
