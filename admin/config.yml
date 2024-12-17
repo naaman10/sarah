@@ -34,8 +34,10 @@ collections:
             fields:
              - { label: "Title", name: "title", widget: "string" }
              - { label: "Text", name: "text", widget: "markdown" }
-             - { label: "Button Text", name: "button-text", widget: "string" }
-             - { label: "Button Link", name: "button-link", widget: "string" }
+             - { label: "Buttons", name: "buttons", widget: "list", min: 1, max: 2, fields:
+              - { label: "Button Text", name: "button-text", widget: "string" }
+              - { label: "Button Link", name: "button-link", widget: "string" }
+             }
           - label: "Contact Section"
             name: "contact"
             widget: "object"
