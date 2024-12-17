@@ -86,7 +86,7 @@ collections:
                   - label: "Service text"
                     name: "service-text"
                     widget: "markdown"
-                    pattern: ["^.{0,40}$"]
+                    pattern: ["^.{0,40}$", "Must not exceed 40 characters"]
                   - label: "Service link"
                     name: "service-link"
                     widget: "string"
