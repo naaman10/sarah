@@ -43,4 +43,32 @@ contact:
       value: sarah@sarahhudsoncounselling.com
     - type: BACP
       value: https://www.bacp.co.uk/therapists/111111/sarah-hudson/manchester-m2
+services:
+  title: My Services
+  intro: Some text about the services I offer.
+  services:
+    - service-name: Service 1
+      service-text: Service 1 text
+      service-link: "#"
+      service-link-text: Find out more
+    - service-name: Service 2
+      service-text: Service 2 text
+      service-link: "#"
+      service-link-text: Find out more
+    - service-name: Service 3
+      service-text: Service 3 text
+      service-link: "#"
+      service-link-text: Find out more
+    - service-name: Service 4
+      service-text: Service 4 text
+      service-link: "#"
+      service-link-text: Find out more
+    - service-name: Service 5
+      service-text: Service 5 text
+      service-link: "#"
+      service-link-text: Find out more
+    - service-name: Service 6
+      service-text: Service 6 text
+      service-link: "#"
+      service-link-text: Find out more
 ---
