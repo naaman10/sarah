@@ -19,7 +19,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .vh-33 {
     min-height: 33vh;
-    max-height: 33vh;
 }
 #hero-banner {
     .vh-50 {
@@ -129,5 +128,37 @@ h1, h2, h3, h4, h5, h6, p {
     .col {
     background-color: #FEE171;
     padding: 50px;
+    }
+}
+#services-section {
+    margin-top: 1vh;
+    .service-row > div {
+        &:nth-child(1) {
+            background-color: #E698D0;
+        }
+        &:nth-child(2) {
+            background-color: #FEE171;
+        }
+        &:nth-child(3) {
+            background-color: #141414;
+            color: #F6F1ED; 
+        }
+        &:nth-child(4) {
+            background-color: #EB6149;
+        }
+        &:nth-child(5) {
+            background-color: #282828;
+            color: #F6F1ED;
+        }
+        &:nth-child(6) {
+            background-color: #BBC34F;
+        }
+        &:nth-child(7) {
+            background-color: #90918B;
+        }
+        &:nth-child(8) {
+            background-color: #5BC4E6;
+
+        }
     }
 }
