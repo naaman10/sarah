@@ -39,7 +39,7 @@
             {% endfor %}
             {% when 4 %}
             {% for service in page.services.services %}
-                <div class="col-sm-12 col-md-4 vh-66 d-flex align-items-center justify-content-center">
+                <div class="col-sm-12 col-md-3 vh-66 d-flex align-items-center justify-content-center">
                     <div class="text-center">
                         <h3>{{ service.service-name }}</h3>
                         {{ service.service-text | markdownify }}
