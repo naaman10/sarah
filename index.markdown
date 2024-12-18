@@ -29,11 +29,11 @@ about:
 
 
     Commodo mus sapien placerat nisl mauris praesent suspendisse nullam vulputate. Cursus laoreet sodales habitasse natoque sit turpis cubilia. Metus suscipit quisque justo luctus ex morbi. Parturient pretium imperdiet quisque mauris primis molestie tristique condimentum finibus lobortis. Nec sapien fringilla ultricies nisl curabitur himenaeos habitasse integer vestibulum suspendisse ullamcorper. Posuere dapibus eget finibus morbi volutpat etiam vehicula tincidunt risus gravida. Penatibus fermentum eu proin massa egestas diam scelerisque est. Finibus ante felis morbi neque accumsan vestibulum.
+  button-text: Contact Sarah
+  button-link: "#contact-section"
   buttons:
     - button-text: My Services
       button-link: "#services-section"
-    - button-text: Contact Sarah
-      button-link: "#contact-section"
 contact:
   title: Contact Sarah
   intro: Id integer efficitur ridiculus viverra ullamcorper mauris facilisis
@@ -50,28 +50,20 @@ services:
   title: My Services
   intro: Some text about the services I offer.
   services:
-    - service-name: Service 1
+    - service-name: In-Person Personal Therapy
       service-text: Service 1 text
       service-link: "#"
       service-link-text: Find out more
-    - service-name: Service 2
+    - service-name: Online Personal Therapy
       service-text: Service 2 text
       service-link: "#"
       service-link-text: Find out more
-    - service-name: Service 3
+    - service-name: Couples Therapy
       service-text: Service 3 text
       service-link: "#"
       service-link-text: Find out more
-    - service-name: Service 4
+    - service-name: Bereavement Counselling
       service-text: Service 4 text
-      service-link: "#"
-      service-link-text: Find out more
-    - service-name: Service 5
-      service-text: Service 5 text
-      service-link: "#"
-      service-link-text: Find out more
-    - service-name: Service 6
-      service-text: Service 6 text
       service-link: "#"
       service-link-text: Find out more
 ---
