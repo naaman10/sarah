@@ -1,7 +1,7 @@
 items:
   - name: Services
-    link: /services
+    link: '#services-section'
   - name: About
-    link: /about
+    link: '#about-section'
   - name: Contact
-    link: /contact
+    link: '#contact-section'
